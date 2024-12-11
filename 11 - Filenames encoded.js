@@ -6,7 +6,7 @@ function decodeFilename(filename) {
   // Separar string en array con elems entre los _
   let splited = filename.split('_');
 
-  // Quitar el primer elementos (el número largo)
+  // Quitar el primer elemento (el número largo)
   splited.shift();
 
   // Volver a juntar los elementos, separándolos con _
@@ -18,6 +18,6 @@ function decodeFilename(filename) {
   // Quitar el último elemento (la extensión del Grinch)
   splited.pop();
 
-  // Volver a jutarlos, separándolos con .
-  return splited[0] + '.' + splited[1];
+  // Volver a juntarlos, separándolos con .
+  return splited.join('.')
 }
